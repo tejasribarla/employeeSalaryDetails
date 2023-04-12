@@ -6,6 +6,6 @@ import java.util.*;
 
 
 public interface EmployeeRepository{
-    ArrayList<Employee> getEmployees();
-    Employee addEmployee(Employee employee);
+    ArrayList <Employee> getEmployees();
+    
 }

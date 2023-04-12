@@ -4,21 +4,16 @@ public class Employee {
     private int EmployeeId;
     private String FirstName;
     private String LastName;
-    private String email;
-    private long PhoneNum;
-    private long PhoneNum2;
-
-    private String DOJ;
     private int salary;
-    public Employee(int EmployeeId, String FirstName, String LastName, String email, long PhoneNum, long PhoneNum2, String DOJ, int salary) {
+    private int TaxAmount;
+    private int CessAmount;
+    public Employee(int EmployeeId, String FirstName, String LastName,int salary, int TaxAmount, int CessAmount) {
         this.EmployeeId=EmployeeId;
         this.FirstName=FirstName;
         this.LastName=LastName;
-        this.email=email;
-        this.PhoneNum=PhoneNum;
-        this.PhoneNum2=PhoneNum2;
-        this.DOJ=DOJ;
         this.salary=salary;
+        this.TaxAmount=TaxAmount;
+        this.CessAmount=CessAmount;
     }
     public int getEmployeeId(){
         return this.EmployeeId;
@@ -38,36 +33,27 @@ public class Employee {
     public void setLastName(String LastName) {
         this.LastName=LastName;
     }
-    public String getEmail() {
-        return this.email;
-    }
-    public void setEmail(String email) {
-        this.email=email;
-    }
-    public long getPhoneNum(){
-        return this.PhoneNum;
-    }
-    public void setPhoneNum(long PhoneNum){
-        this.PhoneNum=PhoneNum;
-    }
-    public long getPhoneNum2() {
-        return this.PhoneNum2;
-    }
-    public void setPhoneNum2(long PhoneNum2){
-        this.PhoneNum2=PhoneNum2;
-    }
-    public String getDOJ(){
-        return this.DOJ;
-    }
-    public void setDOJ(String DOJ){
-        this.DOJ=DOJ;
-    }
     public int getSalary(){
         return this.salary;
     }
     public void setSalary(int salary) {
         this.salary=salary;
     }
+    public int getTaxAmount(){
+        return this.TaxAmount;
+    }
+    public void setTaxAmount(int TaxAmount){
+        this.TaxAmount=TaxAmount;
+    }
+
+    public int getCessAmount(){
+        return this.CessAmount;
+    }
+    public void setCessAmount(int CessAmount) {
+        this.CessAmount=CessAmount;
+    }
+
+
 
 
 }

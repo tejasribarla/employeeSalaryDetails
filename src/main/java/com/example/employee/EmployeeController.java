@@ -19,13 +19,10 @@ public class EmployeeController{
     EmployeeService employeeService= new EmployeeService();
 
     @GetMapping("/employees")
-    public ArrayList<Employee> getEmployees(){
+    public ArrayList <Employee> getEmployees(){
         return employeeService.getEmployees();
     }
 
-    @PostMapping("/employees")
-    public Employee addEmployee(@RequestBody Employee employee) {
-        return employeeService.addEmployee(employee);
-    }
+    
 }
     
